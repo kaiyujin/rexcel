@@ -18,8 +18,8 @@ rexcel -c=B1
 
 ## Args
 
-- -f file path (Required if environment variable REXCEL_FILE is not present)
-- -s sheet name (Required if environment variable REXCEL_SHEET is not present)
+- `-f` file path (Required if environment variable REXCEL_FILE is not present)
+- `-s` sheet name (Required if environment variable REXCEL_SHEET is not present)
 - Either is required
-  - -r row number
-  - -c cell
+  - `-r` row number
+  - `-c` cell

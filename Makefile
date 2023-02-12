@@ -16,3 +16,6 @@ help: ## Display this help screen
 
 goreleaser-local: ## Run a "local-only" release
 	goreleaser release --snapshot --clean
+
+credit: ## Create credit file
+	gocredits . > CREDITS

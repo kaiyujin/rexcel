@@ -6,7 +6,7 @@ rexcel is a tool that reads specific rows and cells from an Excel file.
 
 Specify the file path and sheet name each time, and output the third line.
 ```
-rexcel -r=3
+rexcel -f=target.xlsx -s=Sheet1 -r=3
 ```
 
 Read file path and sheet name from environment variables, and output B1 cell

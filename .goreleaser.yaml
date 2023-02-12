@@ -2,10 +2,7 @@
 # Make sure to check the documentation at https://goreleaser.com
 before:
   hooks:
-    # You may remove this if you don't use go modules.
     - go mod tidy
-    # you may remove this if you don't need go generate
-    - go generate ./...
 builds:
   - env:
       - CGO_ENABLED=0
@@ -13,7 +10,7 @@ builds:
       - linux
       - windows
       - darwin
-
+    ldflags: -s -w -X main.version={{.Version}}
 archives:
   - format: tar.gz
     # this name template makes the OS and Arch compatible with the results of uname.

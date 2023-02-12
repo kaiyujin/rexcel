@@ -28,6 +28,9 @@ archives:
     format_overrides:
     - goos: windows
       format: zip
+    files:
+      - LICENSE.md
+      - CREDITS
 checksum:
   name_template: 'checksums.txt'
 snapshot:
@@ -38,7 +41,16 @@ changelog:
     exclude:
       - '^docs:'
       - '^test:'
-
+release:
+  prerelease: auto
+brews:
+  - tap:
+      owner: kaiyujin
+      name: homebrew-tap
+    folder: Formula
+    homepage: 'https://github.com/kaiyujin/rexcel'
+    description: 'rexcel is a tool that reads specific rows and cells from an Excel file.'
+    license: "MIT"
 # The lines beneath this are called `modelines`. See `:help modeline`
 # Feel free to remove those if you don't want/use them.
 # yaml-language-server: $schema=https://goreleaser.com/static/schema.json

@@ -2,6 +2,16 @@
 
 rexcel is a tool that reads specific rows and cells from an Excel file.
 
+## Install
+
+### For mac
+```
+brew install kaiyujin/tap/rexcel
+```
+
+### Other
+[Download file](https://github.com/kaiyujin/rexcel/releases)
+
 ## Usage
 
 Specify the file path and sheet name each time, and output the third line.
